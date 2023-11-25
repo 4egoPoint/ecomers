@@ -6,9 +6,9 @@ import "./header.scss"
 const Header = () => {
    return (
       <div className='header'>
-         <div class="header__wrapper">
-            <h2 class="header__logo">Pet</h2>
-            <div class="header__cart"><span>Shopping Cart</span> <BsCartCheck /></div>
+         <div className="header__wrapper">
+            <h2 className="header__logo">Pet</h2>
+            <div className="header__cart"><span>Shopping Cart</span> <BsCartCheck /></div>
          </div>
       </div>
    )
