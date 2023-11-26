@@ -7,7 +7,7 @@ import "./home.scss"
 
 const Home = () => {
    const products = useSelector((state) => state.products)
-   console.log(products)
+
    return (
       <div className='home'>
          <div className="home__bg"></div>
@@ -67,7 +67,7 @@ const Home = () => {
                         animal={product.animal}
                         isNew={product.isNew}
                         price={product.price}
-                        age={product.age}
+                        number={product.number}
                         desc={product.desc}
                         img={product.img}
                      />)
