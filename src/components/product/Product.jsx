@@ -6,8 +6,8 @@ import { addProduct } from '../../features/cart/cartSlice'
 import "./product.scss"
 import { useState } from "react";
 
-const Product = ({ id, name, animal, isNew, price, desc, img, }) => {
-   const [prod, setProd] = useState({ id, name, animal, isNew, price, desc, img, })
+const Product = ({ id, name, animal, isNew, price,number,curNumber, desc, img, }) => {
+   const [prod, setProd] = useState({ id, name, animal, isNew, number, curNumber, price, desc, img, })
    const [isClicked, setIsClicked] = useState(true)
    const cart = useSelector((state) => state.cart)
    const dispatch = useDispatch()

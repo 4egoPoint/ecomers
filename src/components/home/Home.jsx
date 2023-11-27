@@ -68,6 +68,7 @@ const Home = () => {
                         isNew={product.isNew}
                         price={product.price}
                         number={product.number}
+                        curNumber={product.curNumber}
                         desc={product.desc}
                         img={product.img}
                      />)
