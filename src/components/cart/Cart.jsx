@@ -2,6 +2,7 @@
 import { BsCartX } from "react-icons/bs";//<BsCartX />
 import { BsCartPlus } from "react-icons/bs";//<BsCartPlus />
 import { useSelector, useDispatch } from 'react-redux'
+import { FaArrowLeftLong } from "react-icons/fa6";
 import "./cart.scss"
 import { useEffect, useState } from "react";
 import { decrement, increment } from '../../features/cart/cartSlice'
@@ -29,6 +30,7 @@ const Cart = () => {
    return (
       <div className="cart">
          <div className="cart__wrapper">
+            <div className="cart__arr"><FaArrowLeftLong /></div>
             <div className="cart__products">
                <h2 className="cart__title">Your future pets are here!</h2>
                <div className="cart__list">
@@ -53,7 +55,7 @@ const Cart = () => {
                               <div onClick={() => del(product)} className="item__minus">-</div>
                            }
                            
-                        </div>
+                        </div> 
                      </div>)
                   } 
                </div>

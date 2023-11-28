@@ -35,8 +35,10 @@
          font-size: 120px;
          font-style: italic;
          @media (max-width: 900px) {
+            color: black;
             font-size: 80px;
             height: 250px;
+            text-shadow: rgb(248, 231, 163) 1px 0 10px;
          }
       }
 
