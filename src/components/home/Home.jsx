@@ -14,7 +14,6 @@ const Home = () => {
    const [isNewFilter, setIsNewFilter] = useState(false)
    const [filterMaxPrice, setFilterMaxPrice] = useState(0)
    const [filterLoverPrice, setFilterLoverPrice] = useState(0)
-   console.log(searchArea)
    const onTypeInput = (e) => {
       setSearchArea(e.target.value.toLowerCase())
    }
@@ -68,7 +67,7 @@ const Home = () => {
                               <button onClick={()=>setFilterAnimal("dog")} >Dog</button>
                               <button onClick={()=>setFilterAnimal("")} >All</button>
                            </div>
-                        </div>
+                        </div> 
                      </div>
                      <div className="content__filters-price">
                         <input onChange={(e)=> setFilterLoverPrice(e.target.value)} type="text" placeholder={filterLoverPrice===""?filterLoverPrice:"Price from"} />
@@ -93,7 +92,7 @@ const Home = () => {
                         filterMaxPrice={filterMaxPrice}
                         filterLoverPrice={filterLoverPrice}
                         isNewFilter={isNewFilter}
-                        id={product.id}
+                        key={product.id}
                         name={product.name}
                         animal={product.animal}
                         isNew={product.isNew}

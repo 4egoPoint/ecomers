@@ -11,7 +11,7 @@ const Header = () => {
             <Link to="/" className="header__logo">Pet</Link>
             <Link to="/cart" className="header__cart"><span>Shopping Cart</span> <BsCartCheck /></Link>
          </div>
-      </div>
+      </div> 
    )
 }
 

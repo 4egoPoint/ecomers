@@ -6,6 +6,9 @@
       height: 100vh;
       width: 100vw;
       background: url("./bg.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
       position: fixed;
       z-index: -1;
 
@@ -19,6 +22,10 @@
       width: 1366px;
       margin: auto;
 
+      @media (max-width: 1366px) {
+         width: 100%;
+      }
+
       .home__hello {
          display: flex;
          align-items: center;
@@ -27,6 +34,10 @@
          color: white;
          font-size: 120px;
          font-style: italic;
+         @media (max-width: 900px) {
+            font-size: 80px;
+            height: 250px;
+         }
       }
 
       .home__content {
@@ -48,12 +59,20 @@
                   width: 100%;
                   border: none;
                   padding: 20px 15px 20px 15px;
+                  @media (max-width: 900px) {
+                     font-size: 18px;
+                     padding: 10px;
+                  }
 
                   &:focus {
                      border: none;
                      outline: none;
                      border-bottom: 2px solid black;
                      padding: 20px 15px 18px 15px;
+                     @media (max-width: 900px) {
+                        font-size: 18px;
+                        padding: 10px 10px 8px 10px;
+                     }
                   }
                }
 
@@ -68,6 +87,10 @@
                   font-size: 25px;
                   padding: 20px;
                   cursor: pointer;
+                  @media (max-width: 900px) {
+                     font-size: 18px;
+                     padding: 10px;
+                  }
 
                   &:hover {
                      background-color: white;
@@ -90,6 +113,9 @@
             .content__filters-row {
                display: flex;
                gap: 20px;
+               @media (max-width: 900px) {
+                  gap: 10px;
+               }
 
                .content__filters-price {
                   input {
@@ -100,6 +126,10 @@
                      border: none;
                      height: 100%;
                      border-radius: 5px;
+                     @media (max-width: 900px) {
+                        font-size: 15px;
+                        width: 80px;
+                     }
 
                      &:focus {
                         outline: none;
@@ -131,6 +161,10 @@
                         border: none;
                         cursor: pointer;
                         min-width: 150px;
+                        @media (max-width: 900px) {
+                           padding: 8px;
+                           min-width: 100px;
+                        }
 
                         .dropbtn__ic {
                            font-size: 25px;

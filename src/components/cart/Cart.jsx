@@ -55,7 +55,7 @@ const Cart = () => {
                            
                         </div>
                      </div>)
-                  }
+                  } 
                </div>
             </div>
             <div className="cart__summary summary">

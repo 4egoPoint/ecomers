@@ -29,7 +29,6 @@ const Product = ({ finalWord,
       dispatch(addProduct(prod))
       setIsClicked(false)
    }
-   console.log("asdaasd" + finalWord)
    const content = () => {
       return (
          <div className="product">
@@ -38,7 +37,7 @@ const Product = ({ finalWord,
                   <img src={img} />
                </div>
                <div className="product__content">
-                  <div class="product__col">
+                  <div className="product__col">
                      <h2 className="product__name">{name}</h2>
                      <div className="product__text">{desc}</div>
                   </div>
