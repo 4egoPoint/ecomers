@@ -82,13 +82,14 @@
             background-color: #232D3F;
             color: white;
             min-height: 100px;
-
-            &:hover {
-               color: #232D3F;
-               background-color: rgb(224, 223, 223);
-               -webkit-box-shadow: inset 2px -6px 20px 0px rgba(153, 153, 153, 1);
-               -moz-box-shadow: inset 2px -6px 20px 0px rgba(153, 153, 153, 1);
-               box-shadow: inset 2px -6px 20px 0px rgba(153, 153, 153, 1);
+            @media (min-width: 900px) {
+               &:hover {
+                  color: #232D3F;
+                  background-color: rgb(224, 223, 223);
+                  -webkit-box-shadow: inset 2px -6px 20px 0px rgba(153, 153, 153, 1);
+                  -moz-box-shadow: inset 2px -6px 20px 0px rgba(153, 153, 153, 1);
+                  box-shadow: inset 2px -6px 20px 0px rgba(153, 153, 153, 1);
+               }
             }
          }
       }

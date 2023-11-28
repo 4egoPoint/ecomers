@@ -18,7 +18,7 @@ const Product = ({ finalWord,
    price,
    number,
    curNumber,
-   desc,
+   desc, 
    img, }) => {
    useEffect(() => { }, [filterMaxPrice, filterLoverPrice, finalWord])
    const [prod, setProd] = useState({ id, name, animal, isNew, number, curNumber, price, desc, img, })
